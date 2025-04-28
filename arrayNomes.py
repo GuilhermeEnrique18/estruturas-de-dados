@@ -1,5 +1,8 @@
-arrayNomes = ["","","","",""]
+arrayNomes = ["",""]
 for i in range(len(arrayNomes)):
-    arrayNomes[i]= input(f"Informe o nome {i + 1}: ")
-for i in range(len(arrayNomes)):
-    print(f"{arrayNomes[i]} esta na posição - {i}")
+    arrayNomes[i]= input(f"Informe o nome {i}: ")
+nome = input("Digite o nome para saber se esta na lista: ")
+if nome in arrayNomes:
+    print(nome, "Na posição", [i])
+else:
+    print("Não está")
